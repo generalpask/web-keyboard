@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+body {
+    overflow: hidden;
+}
+.main {
+    width: 100%;
+    height: auto;
+    padding: 3.5vw 0 0 3.5vw;
+    .row {
+        display: flex;
+        flex-direction: row;
+        .key {
+            width: 10vh;
+            border: 1px solid black;
+            border-radius: 5px;
+            &.first {
+                margin-left: 0px!important;
+            }
+        }
+        .pressed {
+            transform: scale(0.90);
+            background-color: red;
+        }
+    }
+    
+    .row1 {
+        margin-bottom: 1vh;
+        .key {
+            width: 9.99vh;
+            height: 5vh;
+            margin-right: 1vh;
+            &#ins {
+                margin-right: 2vh;
+            }
+        }
+        
+    }
+    .row2 {
+        margin-top: -1px;
+        margin-bottom: 2vh;
+        .key {
+            height: 10vh;
+            margin-right: 2vh;
+            &.bsp {
+                width: 20vh;
+            }
+        }
+        
+    }
+    .row3 {
+        margin-top: -1px;
+        margin-bottom: 2vh;
+        .key {
+            height: 10vh;
+            margin-right: 2vh;
+            &.tab {
+                width: 17.5vh;
+            }
+            &.entertop {
+                width: 12.25vh;
+                border-bottom: 0;
+
+                transform-origin: bottom;
+                border-radius: 5px 5px 0 5px;
+            }
+        }
+    }
+    .row4 {
+        margin-top: -1px;
+        margin-bottom: 2vh;
+        .key {
+            height: 10vh;
+            margin-right: 2vh;
+            &.capslock {
+                width: 20vh;
+            }
+            &.enterbottom {
+                position: relative;
+                height: 12vh;
+                bottom: 2vh;
+                border-top: 0;
+                right: 2px;
+                border-radius: 0 0 5px 5px;
+
+                transform-origin: top;
+            }
+        }
+    }
+    .row5 {
+        position: relative;
+        top: -2vh;
+        margin-top: -1px;
+        margin-bottom: 2vh;
+        .key {
+            height: 10vh;
+            margin-right: 2vh;
+            &.lshift {
+                width: 14vh;
+            }
+            &.rshift {
+                width: 27.5vh;
+            }
+        }
+    }
+    .row6 {
+        position: relative;
+        top: -2vh;
+        margin-top: -1px;
+        margin-bottom: 2vh;
+        .key {
+            height: 10vh;
+            margin-right: 2vh;
+            &.lctrl {
+                width: 14vh;
+            }
+            &.spacebar {
+                width: 58vh;
+            }
+            &.smallkey {
+                height: 5vh;
+                margin-right: 3.75vh;
+                &.uarr {
+                    width: 12vh;
+                }
+            }
+        }
+    }
+    .extra {
+        top: -2vh;
+        margin-top: -1px;
+        margin-bottom: 2vh;
+        .key {
+            height: 5vh;
+            width: 12vh;
+            margin-right: 1.75vh;
+            position: relative;
+            bottom: 8vh;
+            &.spacer {
+                width: 135vh;
+                opacity: 0;
+            }
+            &.rarr {
+                margin-left: -0.75vh;
+            }
+        }
+    }
+}
+

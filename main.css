@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  padding: 3.5vw 0 0 3.5vw;
+}
+
+.main .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.main .row .key {
+  width: 10vh;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.main .row .key.first {
+  margin-left: 0px !important;
+}
+
+.main .row .pressed {
+  transform: scale(0.9);
+  background-color: red;
+}
+
+.main .row1 {
+  margin-bottom: 1vh;
+}
+
+.main .row1 .key {
+  width: 9.99vh;
+  height: 5vh;
+  margin-right: 1vh;
+}
+
+.main .row1 .key#ins {
+  margin-right: 2vh;
+}
+
+.main .row2 {
+  margin-top: -1px;
+  margin-bottom: 2vh;
+}
+
+.main .row2 .key {
+  height: 10vh;
+  margin-right: 2vh;
+}
+
+.main .row2 .key.bsp {
+  width: 20vh;
+}
+
+.main .row3 {
+  margin-top: -1px;
+  margin-bottom: 2vh;
+}
+
+.main .row3 .key {
+  height: 10vh;
+  margin-right: 2vh;
+}
+
+.main .row3 .key.tab {
+  width: 17.5vh;
+}
+
+.main .row3 .key.entertop {
+  width: 12.25vh;
+  border-bottom: 0;
+  transform-origin: bottom;
+  border-radius: 5px 5px 0 5px;
+}
+
+.main .row4 {
+  margin-top: -1px;
+  margin-bottom: 2vh;
+}
+
+.main .row4 .key {
+  height: 10vh;
+  margin-right: 2vh;
+}
+
+.main .row4 .key.capslock {
+  width: 20vh;
+}
+
+.main .row4 .key.enterbottom {
+  position: relative;
+  height: 12vh;
+  bottom: 2vh;
+  border-top: 0;
+  right: 2px;
+  border-radius: 0 0 5px 5px;
+  transform-origin: top;
+}
+
+.main .row5 {
+  position: relative;
+  top: -2vh;
+  margin-top: -1px;
+  margin-bottom: 2vh;
+}
+
+.main .row5 .key {
+  height: 10vh;
+  margin-right: 2vh;
+}
+
+.main .row5 .key.lshift {
+  width: 14vh;
+}
+
+.main .row5 .key.rshift {
+  width: 27.5vh;
+}
+
+.main .row6 {
+  position: relative;
+  top: -2vh;
+  margin-top: -1px;
+  margin-bottom: 2vh;
+}
+
+.main .row6 .key {
+  height: 10vh;
+  margin-right: 2vh;
+}
+
+.main .row6 .key.lctrl {
+  width: 14vh;
+}
+
+.main .row6 .key.spacebar {
+  width: 58vh;
+}
+
+.main .row6 .key.smallkey {
+  height: 5vh;
+  margin-right: 3.75vh;
+}
+
+.main .row6 .key.smallkey.uarr {
+  width: 12vh;
+}
+
+.main .extra {
+  top: -2vh;
+  margin-top: -1px;
+  margin-bottom: 2vh;
+}
+
+.main .extra .key {
+  height: 5vh;
+  width: 12vh;
+  margin-right: 1.75vh;
+  position: relative;
+  bottom: 8vh;
+}
+
+.main .extra .key.spacer {
+  width: 135vh;
+  opacity: 0;
+}
+
+.main .extra .key.rarr {
+  margin-left: -0.75vh;
+}
