@@ -4,14 +4,19 @@
   padding: 0;
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 body {
   overflow: hidden;
+  background-color: #272b30;
+}
+
+.hidden {
+  display: none;
 }
 
 .main {
-  width: 100%;
   height: auto;
   padding: 3.5vw 0 0 3.5vw;
 }
@@ -21,7 +26,7 @@ body {
   width: 90vw;
   padding: 1vh;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5px;
   min-height: 6vh;
   height: auto;
@@ -30,13 +35,16 @@ body {
   flex-direction: row;
 }
 
+.main .inputarea .input {
+  width: auto;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
 .main .inputarea .line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 2.5px;
-  height: 30px;
-  background-color: black;
+  height: 35px;
+  background-color: white;
   margin-left: 5px;
 }
 
@@ -48,8 +56,9 @@ body {
 
 .main .row .key {
   width: 10vh;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5px;
+  background-color: #3a3f44;
 }
 
 .main .row .key.first {
@@ -57,8 +66,7 @@ body {
 }
 
 .main .row .pressed {
-  transform: scale(0.9);
-  background-color: red;
+  background-color: #6b737c;
 }
 
 .main .row1 {
@@ -108,10 +116,20 @@ body {
 }
 
 .main .row3 .key.entertop {
+  position: relative;
   width: 12.25vh;
   border-bottom: 0;
   transform-origin: bottom;
   border-radius: 5px 5px 0 5px;
+}
+
+.main .row3 .key.entertop .enterline {
+  height: 1px;
+  width: 2.25vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
 }
 
 .main .row4 {
@@ -125,7 +143,19 @@ body {
 }
 
 .main .row4 .key.capslock {
+  position: relative;
   width: 20vh;
+}
+
+.main .row4 .key.capslock .capslocklight {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+  background: white;
+  border-radius: 10px;
 }
 
 .main .row4 .key.enterbottom {
