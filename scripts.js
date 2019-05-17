@@ -15,21 +15,25 @@ $("button.key").on('mouseup', function(){
 // Listeners keydown och keyup känner av när användaren trycker ner en tangent på tangentborder på sin dator
 document.addEventListener('keydown', function(event) {
     
+    // Loggar .key och .code för debug
     console.log("key = " + event.key + " and code = " + event.code);
 
     const key = document.getElementById(event.code);
 
+    // Keys som inte ska användas
     var unusedKeys = ["", "Escape", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Insert", "Delete", "Equal", "BracketRight", "Tab", "Enter", "CapsLock", "ShiftLeft", "ShiftRight", "ControlLeft", "MetaLeft", "AltLeft", "AltRight", "ControlRight", "PageUp", "ArrowUp", "PageDown", "ArrowLeft", "ArrowDown", "ArrowRight"]
 
     var specialKeys = []
 
-    if (event.code == 'Enter') {
+    
+    if (event.code == 'Enter') { // Entertangenten är två knappar, så de måste reagera tillsammans
         $("#EnterTop, #EnterBottom").addClass('pressed');
     }
-    else {
+    else { // Reagerar annars som vanligt
         $(key).addClass('pressed');
     }
     
+    // Backspace-funktion
     if (event.code == 'Backspace') {
         $('.input').text(function (_,txt) {
             return txt.slice(0, -1);
@@ -50,7 +54,8 @@ document.addEventListener('keydown', function(event) {
     
 }, true);
 
-document.addEventListener('keyup', function(event) {
+
+document.addEventListener('keyup', function(event) { // Händer när användaren släpper tangenten
 
     const key = document.getElementById(event.code);
 
