@@ -59,7 +59,7 @@ body {
             }
         }
         .pressed {
-            //transform: scale(0.9);
+            transform: scale(0.9);
             background-color: #6b737c;
         }
     }
@@ -69,11 +69,11 @@ body {
         .key {
             width: 9.99vh;
             height: 5vh;
-            margin-right: 1vh;
+            margin-right: 0.925vh;
             &#Escape {
                 margin-right: 2vh;
             }
-            &#ins {
+            &#Insert {
                 margin-right: 2vh;
             }
         }

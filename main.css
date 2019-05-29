@@ -66,6 +66,7 @@ body {
 }
 
 .main .row .pressed {
+  transform: scale(0.9);
   background-color: #6b737c;
 }
 
@@ -76,14 +77,14 @@ body {
 .main .row1 .key {
   width: 9.99vh;
   height: 5vh;
-  margin-right: 1vh;
+  margin-right: 0.925vh;
 }
 
 .main .row1 .key#Escape {
   margin-right: 2vh;
 }
 
-.main .row1 .key#ins {
+.main .row1 .key#Insert {
   margin-right: 2vh;
 }
 

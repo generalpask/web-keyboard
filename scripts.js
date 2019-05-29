@@ -1,5 +1,6 @@
 var clicked = false;
 
+// Dessa två funktioner aktiveras om man trycker på knapparna med musen
 $("button.key").on('mousedown', function(){
     $(this).addClass('pressed');
     clicked = true;
@@ -39,6 +40,7 @@ document.addEventListener('keydown', function(event) {
             return txt.slice(0, -1);
         });
     }
+
     /*
     else if (event.code == "Enter") {
         $('.input').append("<br\>");
@@ -54,8 +56,8 @@ document.addEventListener('keydown', function(event) {
     
 }, true);
 
-
-document.addEventListener('keyup', function(event) { // Händer när användaren släpper tangenten
+// Händer när användaren släpper tangenten:
+document.addEventListener('keyup', function(event) { 
 
     const key = document.getElementById(event.code);
 
@@ -65,6 +67,7 @@ document.addEventListener('keyup', function(event) { // Händer när användaren
     else {
         $(key).removeClass('pressed');
     }
+
 }, true);
 
 // Får linjen att blinka
